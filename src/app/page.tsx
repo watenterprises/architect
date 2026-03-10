@@ -45,40 +45,6 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Philosophy Section */}
-      <Section className="bg-stone-50">
-        <Container>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div className="md:col-span-5">
-              <FadeIn delay={0.2}>
-                <div className="aspect-[3/4] relative overflow-hidden rounded-sm">
-                  <Image
-                    src="https://images.unsplash.com/photo-1506145347260-2521da210086?q=80&w=1200&auto=format&fit=crop"
-                    alt="Philosophy"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </FadeIn>
-            </div>
-            <div className="md:col-span-7 space-y-8">
-              <FadeIn>
-                <h2 className="text-sm font-bold tracking-widest uppercase text-stone-500">Our Philosophy</h2>
-                <h3 className="text-4xl md:text-5xl font-serif text-charcoal-900 leading-tight">
-                  Architecture is not just about buildings. It means life.
-                </h3>
-                <p className="text-lg text-stone-600 leading-relaxed text-balance">
-                  We believe that good design is invisible. It supports your daily rituals, enhances your well-being, and connects you to the natural world. Our studio approaches every project with a deep respect for context, material, and light.
-                </p>
-                <Link href="/about" className="inline-flex items-center gap-2 group text-charcoal-900 font-medium hover:text-stone-600 transition-colors">
-                  Read our story <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </Link>
-              </FadeIn>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
       {/* Featured Projects */}
       <Section className="bg-white">
         <Container>
@@ -112,6 +78,41 @@ export default function Home() {
                 </Link>
               </FadeIn>
             ))}
+          </div>
+        </Container>
+      </Section>
+
+      {/* Philosophy Section */}
+      <Section className="bg-stone-50">
+        <Container>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div className="md:col-span-5">
+              <FadeIn delay={0.2}>
+                <div className="aspect-[3/4] relative overflow-hidden rounded-sm group">
+                  <Image
+                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"
+                    alt="Philosophy Room Interior"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-black/20 transition-opacity duration-700 group-hover:bg-black/40" />
+                </div>
+              </FadeIn>
+            </div>
+            <div className="md:col-span-7 space-y-8">
+              <FadeIn>
+                <h2 className="text-sm font-bold tracking-widest uppercase text-stone-500">Our Philosophy</h2>
+                <h3 className="text-4xl md:text-5xl font-serif text-charcoal-900 leading-tight">
+                  Architecture is not just about buildings. It means life.
+                </h3>
+                <p className="text-lg text-stone-600 leading-relaxed text-balance">
+                  We believe that good design is invisible. It supports your daily rituals, enhances your well-being, and connects you to the natural world. Our studio approaches every project with a deep respect for context, material, and light.
+                </p>
+                <Link href="/about" className="inline-flex items-center gap-2 group text-charcoal-900 font-medium hover:text-stone-600 transition-colors">
+                  Read our story <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </FadeIn>
+            </div>
           </div>
         </Container>
       </Section>
